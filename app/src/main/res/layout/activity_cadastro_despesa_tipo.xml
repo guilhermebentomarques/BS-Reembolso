@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Viagens fora da região metropolitada de Belo Horizonte"
+            style="@style/Texto_Usuario"
+            android:gravity="center_horizontal"
+            android:textSize="13dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btnDespesaViagem"
+            android:layout_width="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="80dp"
+            android:background="@drawable/shape2"
+            android:text="Despesa de Viagem"
+            android:gravity="bottom|center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/branco"
+            android:onClick="prcSyncCadastro"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Atendimentos dentro região metropolitada de Belo Horizonte"
+            style="@style/Texto_Usuario"
+            android:gravity="center_horizontal"
+            android:textSize="13dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btnDespesaBasica"
+            android:layout_width="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="80dp"
+            android:background="@drawable/shape3"
+            android:text="Despesa Local"
+            android:gravity="bottom|center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/branco"
+            android:onClick="prcSyncCadastro"/>
+
+    </LinearLayout>
+
+</ScrollView>

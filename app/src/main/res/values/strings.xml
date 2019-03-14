@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BS Reembolso</string>
+    <string name="title_activity_login">BS Reembolso</string>
+
+
+    <string name="lbl_login">Login</string>
+    <string name="lbl_senha">Senha</string>
+    <string name="lblSair">Sair</string>
+    <string name="btnLogar">Logar</string>
+
+    <string name="hello">Hello World, DashBoardActivity!</string>
+    <string name="home">Nome do seu programa</string>
+    <string name="consulta">Consulta</string>
+    <string name="sobre">Sobre</string>
+    <string name="config">Config.</string>
+    <string name="venda">Vendas</string>
+    <string name="rodape">bornsolutions.com.br</string>
+    <string name="title_activity_cadastro_reembolso">CadastroReembolso</string>
+    <string name="title_activity_cadastro_reembolso_item">CadastroReembolsoItem</string>
+    <string name="title_activity_sincronizar">SincronizarActivity</string>
+    <string name="title_activity_lista_reembolso">ListaReembolso</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_lista_reembolso_novo">ListaReembolsoNovo</string>
+    <string name="title_activity_lista_reembolso_item">ListaReembolsoItem</string>
+    <string name="title_activity_activity_tab">ActivityTab</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_abas">AbasActivity</string>
+    <string name="title_activity_editar_reembolso_item">EditarReembolsoItem</string>
+    <string name="title_activity_visualizar_foto">VisualizarFoto</string>
+    <string name="title_activity_expand">ExpandActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cadastro_reembolso_item_novo">CadastroReembolsoItemNovo</string>
+    <string name="title_activity_cadastro_reembolso_tipo">CadastroReembolsoTipo</string>
+    <string name="title_activity_consultar_despesa">ConsultarDespesa</string>
+    <string name="title_activity_configurar">ConfigurarActivity</string>
+    <string name="title_activity_registrar_gcm">RegistrarGCM</string>
+    <string name="title_activity_sobre">SobreActivity</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/icon_collapse" android:state_empty="true">
+        <size android:width="12dp" android:height="8dp"/>
+    </item>
+    <item android:drawable="@drawable/icon_expand" >
+        <size android:width="12dp" android:height="8dp"/>
+    </item>
+</selector>

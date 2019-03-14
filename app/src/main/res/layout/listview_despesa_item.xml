@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dip">
+
+    <ImageView
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:id="@+id/imgFotoDespesa"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="3dip"
+        android:scaleType="centerInside">
+    </ImageView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtDescricao"
+        android:layout_toRightOf="@+id/imgFotoDespesa"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/lltipodespesaData"
+        android:orientation="horizontal"
+        android:layout_marginLeft="2dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgFotoDespesa"
+        android:layout_below="@+id/txtDescricao">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtTipoDespesa"
+            android:layout_toRightOf="@+id/imgFotoDespesa"
+            android:layout_below="@+id/txtDescricao"
+            android:gravity="left">
+        </TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:id="@+id/txtData"
+            android:textSize="7pt"
+            android:gravity="right">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtValor"
+        android:layout_toRightOf="@+id/imgFotoDespesa"
+        android:layout_below="@+id/lltipodespesaData"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip">
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:background="@color/cor_logotipo"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/idLinhaBranca"
+            android:background="#ffffff"/>
+
+     <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:id="@+id/txtData"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/branco"
+        android:gravity="right">
+    </TextView>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtTitulo"
+        android:textSize="7pt"
+        android:layout_below="@id/txtData"
+        android:textColor="@color/branco"
+        android:layout_toRightOf="@+id/imgThumbnail"
+        android:layout_marginLeft="6dip">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtProposta"
+        android:layout_toRightOf="@+id/imgThumbnail"
+        android:layout_below="@+id/txtTitulo"
+        android:textColor="@color/branco"
+        android:textSize="7pt"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="6dip">
+    </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAdiantamento"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_height="fill_parent"
+            android:text="Adiantamento"
+            android:layout_width="match_parent"
+            android:id="@+id/txtAdiantamento"
+            android:textColor="@color/valor_positivo"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:layout_alignBottom="@+id/txtAdiantamentoValor">
+        </TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="R$200,00"
+            android:layout_width="match_parent"
+            android:id="@+id/txtAdiantamentoValor"
+            android:textColor="@color/valor_positivo"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="right">
+        </TextView>
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_expandable_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayoutAdiantamento"
+        android:layout_marginBottom="35dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/exp_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:groupIndicator="@null">
+            </ExpandableListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/llRodape"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/verde">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvRodape"
+            android:textColor="@color/branco"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="110dp"
+            android:text="Total"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtValorTotal"
+            android:text="R$200,00"
+            android:layout_width="match_parent"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:gravity="center_horizontal">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

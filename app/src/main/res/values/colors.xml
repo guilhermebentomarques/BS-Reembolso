@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorCinza">#C0C0C0</color>
+
+    <color name="txt_padrao">#0c0c4d</color>
+    <color name="bg_color">#effcc8</color>
+    <color name="verde">#6dc729</color>
+    <color name="vermelho">#ff081e</color>
+    <color name="bg_action">#fc7952</color>
+    <color name="primary_sucesso">#8cc53e</color>
+    <color name="primary_info">#52c5b9</color>
+    <color name="primary_error">#ff081e</color>
+    <color name="primary_alert">#ffae41</color>
+
+    <color name="branco">#fff</color>
+    <color name="cor_logotipo">#22BCE0</color>
+
+    <color name="title_background">#ffFF0000</color>
+    <color name="title_text">#000000</color>
+    <color name="foreground">#000000</color>
+    <color name="background">#ff000000</color>
+
+    <color name="background_light">#e6ecff</color>
+    <color name="valor_negativo">#ff4d4d</color>
+    <color name="valor_positivo">#206020</color>
+
+</resources>

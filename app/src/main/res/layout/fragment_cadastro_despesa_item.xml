@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CadastroDespesaItemFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="5dp"
+        tools:context=".Activity.CadastroDespesaItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Texto_Padrao"
+            android:text="Data: " />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/cdiedtData"
+                android:enabled="false"
+                style="@style/padrao_edit"
+                android:textAlignment="center"
+                android:layout_width="120dp" />
+
+            <ImageButton
+                android:id="@+id/btnData"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:src="@drawable/btn_data_32"
+                android:text="Data" />
+
+            <Switch
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:checked="false"
+                android:layout_gravity="end"
+                android:textAlignment="viewEnd"
+                android:textSize="6pt"
+                android:text="Despesa Born? "
+                android:id="@+id/switchDespesaBorn" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            style="@style/Texto_Padrao"
+            android:text="Tipo de Despesa: " />
+
+        <Spinner
+            android:id="@+id/spnTipoDespesa"
+            android:layout_width="match_parent"
+            style="@style/padrao_spinner">
+        </Spinner>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llRodape"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout13"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Valor R$"
+                        android:layout_weight="3"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Texto_Padrao" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Valor KM"
+                        android:id="@+id/txtValorKM"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        style="@style/Texto_Padrao" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Distância KM"
+                        android:id="@+id/txtDistanciaKM"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textAlignment="center"
+                        style="@style/Texto_Padrao"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/cdiedtValor"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:inputType="number"
+                        android:layout_marginRight="5dp"
+                        style="@style/padrao_edit" />
+
+                    <EditText
+                        android:id="@+id/cdiedtKMValor"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:inputType="number"
+                        style="@style/padrao_edit" />
+
+                    <EditText
+                        android:id="@+id/cdiedtKMDistancia"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:inputType="number"
+                        style="@style/padrao_edit" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Texto_Padrao"
+            android:text="Descrição: " />
+
+        <EditText
+            android:id="@+id/cdiedtDescricao"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:height="60dp"
+            android:maxLines="3"
+            style="@style/padrao_edit"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/Texto_Padrao"
+                android:id="@+id/cditvTirarFoto"
+                android:text="Tirar Foto: " />
+
+            <ImageButton
+                android:id="@+id/btnFotoFrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/btn_camera_32"
+                android:text="Data" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="65dp"
+                android:onClick="btnAbreImagem"
+                android:id="@+id/ivFotoDespesa"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cdibtnGravar"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Cadastrar"
+            android:textColor="@color/branco" />
+
+
+    </LinearLayout>
+
+</ScrollView>

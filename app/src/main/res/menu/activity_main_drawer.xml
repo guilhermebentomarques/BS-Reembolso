@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_novoreembolso"
+            android:icon="@drawable/dash_add"
+            android:title="Novo Reembolso" />
+        <item
+            android:id="@+id/nav_consultar"
+            android:icon="@drawable/dash_search"
+            android:title="Consultas" />
+        <item
+            android:id="@+id/nav_sincronizar"
+            android:icon="@drawable/dash_sync"
+            android:title="Sincronizar" />
+        <item
+            android:id="@+id/nav_configurar"
+            android:icon="@drawable/dash_settings"
+            android:title="Configurações" />
+        <item
+            android:id="@+id/nav_bkpbd"
+            android:icon="@drawable/backupbd_32"
+            android:title="Backup BD" />
+    </group>
+
+    <!--<item android:title="Comunicação">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>-->
+
+</menu>

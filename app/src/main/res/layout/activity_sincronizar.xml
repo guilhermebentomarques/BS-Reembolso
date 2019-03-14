@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Texto_Padrao"
+            android:gravity="center_horizontal"
+            android:text="Atualizar cadastros: " />
+
+        <Button
+            android:id="@+id/btnSyncCadastro"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Sync Cadastro"
+            android:textColor="@color/branco"
+            android:onClick="prcSyncCadastro"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cor_logotipo"
+                android:gravity="center_horizontal"
+                android:text="Sincronizando Usuários"
+                android:id="@+id/txtStatusProgressCadUsuario"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="left"
+                android:id="@+id/pbprogressbarCadUsuario"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progress_padrao"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cor_logotipo"
+                android:gravity="center_horizontal"
+                android:text="Sincronizando Clientes"
+                android:id="@+id/txtStatusProgressCadCliente"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="left"
+                android:id="@+id/pbprogressbarCadCliente"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progress_padrao"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="@style/Texto_Padrao"
+            android:gravity="center_horizontal"
+            android:text="Enviar despesas e fotos para o servidor: " />
+
+        <Button
+            android:id="@+id/btnSyncDespesas"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Sync Despesas"
+            android:textColor="@color/branco"
+            android:onClick="prcSyncDespesas"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cor_logotipo"
+                android:gravity="center_horizontal"
+                android:text="Total Despesa"
+                android:id="@+id/txtStatusProgressCadDespesa"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="left"
+                android:id="@+id/pbprogressbarCadDespesa"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progress_padrao"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cor_logotipo"
+                android:gravity="center_horizontal"
+                android:text="Total Itens"
+                android:id="@+id/txtStatusProgressCadDespesaItem"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="left"
+                android:id="@+id/pbprogressbarCadDespesaItem"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progress_padrao"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

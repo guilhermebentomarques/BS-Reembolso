@@ -1,0 +1,89 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DespesaItensActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:background="@color/cor_logotipo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/idLinhaBranca"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:textColor="@color/branco"
+            android:id="@+id/txtData"
+            android:layout_marginRight="5dp"
+            android:gravity="right">
+        </TextView>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/branco"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtTitulo"
+            android:textSize="7pt"
+            android:layout_below="@id/txtData"
+            android:layout_toRightOf="@+id/imgThumbnail"
+            android:layout_marginLeft="6dip">
+        </TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtProposta"
+            android:layout_toRightOf="@+id/imgThumbnail"
+            android:layout_below="@+id/txtTitulo"
+            android:textSize="7pt"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="6dip"
+            android:textColor="@color/branco">
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewCustomItem" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAddReembolso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_add"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:tint="@color/branco"
+        app:backgroundTint="@color/cor_logotipo"
+        android:layout_gravity="end|bottom"
+        android:onClick="btnAddReembolso"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

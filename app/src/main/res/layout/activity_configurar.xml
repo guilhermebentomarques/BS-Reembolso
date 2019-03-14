@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity.CadastroDespesaItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Texto_Padrao_Bold"
+        android:text="Tempo Atual: "
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Texto_Padrao_Bold"
+        android:id="@+id/txtTempoAtual"
+        android:text="15 Minutos " />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Texto_Padrao"
+        android:text="Tempo de atualização com servidor: " />
+
+    <Spinner
+        android:id="@+id/spnTempoAtualizacao"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        style="@style/padrao_spinner">
+    </Spinner>
+
+        <Button
+            android:id="@+id/atvconf_btnGravar"
+            android:layout_width="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Salvar"
+            android:textColor="@color/branco"
+            android:onClick="prcGravarConfiguracoes"/>
+
+
+    </LinearLayout>

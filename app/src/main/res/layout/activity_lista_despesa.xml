@@ -1,0 +1,30 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ListaDespesa">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:id="@+id/listViewCustom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAddReembolso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_add"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:tint="@color/branco"
+        app:backgroundTint="@color/cor_logotipo"
+        android:layout_gravity="end|bottom"
+        android:onClick="btnAddReembolso"/>
+
+</android.support.design.widget.CoordinatorLayout>

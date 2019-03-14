@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="5dip"
+        android:background="@color/cor_logotipo">
+
+        <ImageView
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:id="@+id/imgFotoDespesa"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/seta_baixo"
+            android:scaleType="centerInside">
+        </ImageView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Telefone"
+            android:layout_width="match_parent"
+            android:id="@+id/txtTipoDespesa"
+            android:textColor="@color/branco"
+            android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:gravity="left">
+        </TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="R$523,00"
+            android:layout_width="match_parent"
+            android:id="@+id/txtValor"
+            android:textColor="@color/branco"
+            android:textSize="16dp"
+            android:gravity="right">
+        </TextView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

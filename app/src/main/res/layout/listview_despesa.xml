@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dip">
+
+    <ImageView
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:id="@+id/imgThumbnail"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside">
+    </ImageView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:id="@+id/txtData"
+        android:gravity="right">
+    </TextView>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="8pt"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/imgThumbnail"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="6dip">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:textSize="6pt"
+        android:id="@+id/txtProposta"
+        android:layout_toRightOf="@+id/imgThumbnail"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="6dip">
+    </TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProposta"
+        android:layout_toRightOf="@+id/imgThumbnail">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtValores"
+            android:textSize="6pt"
+            android:layout_toRightOf="@+id/imgThumbnail"
+            android:layout_below="@+id/txtProposta"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="6dip">
+        </TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:textSize="6pt"
+            android:id="@+id/txtCodInterno"
+            android:layout_below="@+id/txtProposta"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="6dip"
+            android:gravity="right">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

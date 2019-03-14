@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cor_logotipo</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/cor_logotipo</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btnDash">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/branco</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Txt_Login">
+        <item name="android:textSize">@dimen/texto_padrao</item>
+        <item name="android:layout_width">250dp</item>
+    </style>
+
+    <style name="Edt_Estilo">
+        <item name="android:textSize">@dimen/texto_padrao</item>
+        <item name="android:layout_marginBottom">@dimen/margin_widgets</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog.Sucesso" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/branco</item>
+        <item name="android:textColorPrimary">@color/branco</item>
+        <item name="android:background">@color/primary_sucesso</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog.Info" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/branco</item>
+        <item name="android:textColorPrimary">@color/branco</item>
+        <item name="android:background">@color/primary_info</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog.Error" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/branco</item>
+        <item name="android:textColorPrimary">@color/branco</item>
+        <item name="android:background">@color/primary_error</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog.Alert" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/branco</item>
+        <item name="android:textColorPrimary">@color/branco</item>
+        <item name="android:background">@color/primary_alert</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="HomeText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/foreground</item>
+    </style>
+
+    <style name="TitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/title_background</item>
+    </style>
+
+    <style name="TitleBarLogo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="Texto_Rodape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Texto_Usuario">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/cor_logotipo</item>
+    </style>
+
+    <style name="Texto_Padrao">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Texto_Padrao_Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="padrao_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/edittext_padrao</item>
+    </style>
+
+    <style name="padrao_spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:background">@drawable/spinner_padrao</item>
+    </style>
+
+</resources>
